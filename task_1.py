@@ -22,6 +22,10 @@ with codecs.open('recipe.txt', 'r', 'utf') as file:
         cook_book[element[0]] = list_dish
 
 
+try:
+    del cook_book['Фахитос']
+    del cook_book['Лазанья']
+except KeyError as f:
+    print(f'Рецепт {f} отсутствует')
 
-del cook_book['Фахитос']
 pprint(cook_book, sort_dicts=False, indent=2, width=150)

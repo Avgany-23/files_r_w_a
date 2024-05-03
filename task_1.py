@@ -29,3 +29,4 @@ except KeyError as f:
     print(f'Рецепт {f} отсутствует')
 
 pprint(cook_book, sort_dicts=False, indent=2, width=150)
+
